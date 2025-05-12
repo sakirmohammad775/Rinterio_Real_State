@@ -1,6 +1,6 @@
 # Rinterio Real Estate Website
 
-**Live Link**: \[https://rinterio-real-state.vercel.app/]
+**Live Link**: \[ https://rinterio-real-state.vercel.app/ ]
 **Author**: \[Sakir Mohammad Safayet]
 
 ---
