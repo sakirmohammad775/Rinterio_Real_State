@@ -1,40 +1,51 @@
 import React from 'react';
+import { IoIosSearch } from 'react-icons/io';
+import { IoCartOutline } from 'react-icons/io5';
+import { MdArrowOutward } from 'react-icons/md';
+import { RxDropdownMenu } from 'react-icons/rx';
 
 const Navbar = () => {
-    return (
-        <>
-        <div className="navbar bg-base-100 shadow-sm">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+  const navTab = <>
+    <a className='font-bold'>Home</a>
+    <a>Services</a>
+    <a>Portfolio</a>
+    <a>Blog</a>
+    <a>Contact Us</a>
+  </>
+  return (
+    <>
+      <div className="navbar fixed top-0 left-0 w-full z-50 bg-white shadow">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn  btn-circle">
+              <RxDropdownMenu/>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow">
+              {navTab}
+            </ul>
+          </div>
+        </div>
+        <div className="navbar-center gap-5 text-black">
+          {navTab}
+        </div>
+        <div className="navbar-end">
+          <IoIosSearch />
+          <IoCartOutline />
+          <button
+            className=" hover:bg-lime-500 bg-lime-200 text-black font-semibold py-3 px-6 rounded-full flex items-center justify-center mx-auto"
+          >
+            View Details
+            <div className="bg-lime-500 ml-2 bg- rounded-full w-6 h-6 flex items-center justify-center">
+              <MdArrowOutward className="text-gray-700 text-xl" />
+            </div>
+
+          </button>
+        </div>
       </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </div>
-  </div>
-  <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
-  </div>
-  <div className="navbar-end">
-    <button className="btn btn-ghost btn-circle">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
-    </button>
-    <button className="btn btn-ghost btn-circle">
-      <div className="indicator">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
-        <span className="badge badge-xs badge-primary indicator-item"></span>
-      </div>
-    </button>
-  </div>
-</div>
-        </>
-    );
+    </>
+  );
 };
 
 export default Navbar;
