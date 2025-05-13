@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       {navLinks}
       {/* Search & Cart icons for small devices only */}
-      <div className="flex gap-4 mt-4 lg:hidden">
+      <div className="flex gap-4 mt-4  lg:hidden">
         <IoIosSearch className="text-xl" />
         <IoCartOutline className="text-xl" />
       </div>
