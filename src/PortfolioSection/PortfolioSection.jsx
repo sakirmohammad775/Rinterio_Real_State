@@ -11,7 +11,7 @@ const PortfolioSection = () => {
   return (
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto text-center">
-        <button className="bg-white text-gray-700 py-2 px-4 rounded-full shadow-sm hover:shadow-md transition duration-200 inline-flex items-center">
+        <button className="bg-lime-200 text-gray-700 py-2 px-4 rounded-full shadow-sm hover:shadow-md transition duration-200 inline-flex items-center">
           <FaArrowRight className="mr-2" /> Explore our Latest works
         </button>
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import { FaArrowRight, FaUserCircle } from 'react-icons/fa';
 import backgroundImage from "../assets/bg.jpg"
+import { MdArrowOutward } from 'react-icons/md';
 const ContactSection = () => {
   return (
     <div className="py-16" style={{
-      backgroundImage: `url(${backgroundImage})`,backgroundSize: 'cover',
+      backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',}}>
+      backgroundRepeat: 'no-repeat',
+    }}>
       <div className="container mx-auto text-center">
         {/* Let's Connect Button */}
         <button className="bg-white text-gray-700 py-2 px-4 rounded-full shadow-sm hover:shadow-md transition duration-200 inline-flex items-center">
@@ -24,76 +26,69 @@ const ContactSection = () => {
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
 
+
         {/* Contact Form */}
-        <div className="mt-8 max-w-lg mx-auto rounded-lg bg-white shadow-md p-8">
+        <div className="max-w-max mx-auto rounded-lg p-8 my-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* First Name */}
             <div>
-              <label htmlFor="firstName" className="block text-gray-700 text-sm font-bold mb-2 text-left">
-                First Name*
-              </label>
               <input
                 type="text"
                 id="firstName"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="First name*"
+                className="shadow bg-white appearance-none rounded-4xl w-full py-4 pr-48 pl-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-left"
               />
             </div>
 
             {/* Last Name */}
             <div>
-              <label htmlFor="lastName" className="block text-gray-700 text-sm font-bold mb-2 text-left">
-                Last Name*
-              </label>
               <input
                 type="text"
-                id="lastName"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="firstName"
+                placeholder="First name*"
+                className="shadow bg-white appearance-none rounded-4xl w-full py-4 pr-48 pl-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-left"
               />
             </div>
 
             {/* Phone Number */}
             <div>
-              <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2 text-left">
-                Phone Number*
-              </label>
               <input
-                type="tel"
-                id="phone"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                id="firstName"
+                placeholder="First name*"
+                className="shadow bg-white appearance-none rounded-4xl w-full py-4 pr-48 pl-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-left"
               />
             </div>
 
             {/* Email Number */}
             <div>
-              <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2 text-left">
-                Email Number*
-              </label>
               <input
-                type="email"
-                id="email"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                id="firstName"
+                placeholder="First name*"
+                className="shadow bg-white appearance-none rounded-4xl w-full py-4 pr-48 pl-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-left"
               />
             </div>
           </div>
 
           {/* Message */}
-          <div className="mt-4">
-            <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2 text-left">
-              Write your message here
-            </label>
+          <div className="mt-4 ">
             <textarea
               id="message"
               rows="4"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Tell us about your project"
+              className="shadow bg-white appearance-none rounded-4xl w-full h-[250px] py-5 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             ></textarea>
           </div>
 
           {/* Send Mail Button */}
           <button
-            className="bg-green-400 hover:bg-green-500 text-white font-semibold py-3 px-6 rounded-full mt-6 flex items-center justify-center mx-auto"
+            className="bg-lime-400 hover:bg-green-500 text-black font-bold py-3 px-6 rounded-full mt-6 flex items-center justify-center mx-auto w-full"
           >
             Send Mail
-            <FaArrowRight className="ml-2" />
+            <div className="bg-black ml-2 bg- rounded-full w-6 h-6 flex items-center justify-center">
+              <MdArrowOutward className="text-white text-xl" />
+            </div>
           </button>
         </div>
 
