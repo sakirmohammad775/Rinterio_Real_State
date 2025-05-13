@@ -3,10 +3,10 @@ import { FaCommentDots, FaLayerGroup, FaUsers, FaUserFriends } from 'react-icons
 
 const StatsSection = () => {
   return (
-    <div className="bg-gray-100 py-12">
-      <div className="container mx-auto rounded-2xl bg-white shadow-md p-8 flex justify-around items-center">
+    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto rounded-2xl bg-white shadow-md p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {/* Happy Client Review */}
-        <div className="text-center">
+        <div>
           <div className="w-12 h-12 rounded-full bg-indigo-100 text-indigo-500 flex items-center justify-center mx-auto mb-2">
             <FaCommentDots className="text-2xl" />
           </div>
@@ -15,7 +15,7 @@ const StatsSection = () => {
         </div>
 
         {/* Work Departments */}
-        <div className="text-center">
+        <div>
           <div className="w-12 h-12 rounded-full bg-green-100 text-green-500 flex items-center justify-center mx-auto mb-2">
             <FaLayerGroup className="text-2xl" />
           </div>
@@ -24,7 +24,7 @@ const StatsSection = () => {
         </div>
 
         {/* Our Happy Client */}
-        <div className="text-center">
+        <div>
           <div className="w-12 h-12 rounded-full bg-yellow-100 text-yellow-500 flex items-center justify-center mx-auto mb-2">
             <FaUsers className="text-2xl" />
           </div>
@@ -33,7 +33,7 @@ const StatsSection = () => {
         </div>
 
         {/* Staff Members */}
-        <div className="text-center">
+        <div>
           <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center mx-auto mb-2">
             <FaUserFriends className="text-2xl" />
           </div>

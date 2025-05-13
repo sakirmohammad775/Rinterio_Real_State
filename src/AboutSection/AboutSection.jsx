@@ -9,7 +9,7 @@ const AboutSection = () => {
             <div className="hero bg-[#F4F4F4] min-h-screen">
                 <div className="hero-content grid lg:grid-cols-2 gap-20">
                     {/*right side*/}
-                    <div className="container mx-auto ">
+                    <div className="container mx-auto px-12 ">
                         <div className="relative w-16 h-8 mx-auto mb-4">
                         </div>
 
@@ -61,7 +61,7 @@ const AboutSection = () => {
                      {/*left side*/}
                     <img
                         src={rectangleImage}
-                        className="max-w-md rounded-lg shadow-2xl items-center mt-30"
+                        className="max-w-md rounded-lg shadow-2xl items-center pr-12 pb-5 mt-30"
                     />
                   
                 </div>

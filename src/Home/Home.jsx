@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
-        <div className=' mx-auto max-w-screen'>
+        <div className='max-w-screen w-[1500px]'>
             <Navbar></Navbar>
             <Banner></Banner>
             <AboutSection></AboutSection>
