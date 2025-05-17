@@ -8,6 +8,7 @@ const Banner = () => {
       <div className="max-w-5xl mx-auto text-center">
         {/* Image */}
         <img
+        
           src={bannerImg}
           alt="Barn House Design"
           className="w-full max-w-lg mx-auto rounded-lg shadow-md"
